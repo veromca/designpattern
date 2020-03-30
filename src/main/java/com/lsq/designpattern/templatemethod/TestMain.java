@@ -19,6 +19,9 @@ package com.lsq.designpattern.templatemethod;
  * 最终方法：子类不能重写的方法，是若要完成模板方法的算法步骤，对于所有子类执行都一样的步骤。
  * 钩子方法，是父类给出默认实现，但子类也可以重写的方法。（个钩子方法由一个抽象类或具体类声明并实现，而其子类可能会加以扩展。通常在父类中给出的实现是一个空实现
  * （可使用virtual关键字将其定义为虚函数），并以该空实现作为方法的默认实现，当然钩子方法也可以提供一个非空的默认实现。）
+ * 三、使用场景
+ *  3.1 JVM ClassLoader 双亲委派机制 ClassLoader.loadClass(String name, boolean resolve)
+ *  3.2
  */
 public class TestMain {
     public static void main(String[] args) {

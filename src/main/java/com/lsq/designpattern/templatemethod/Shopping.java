@@ -4,7 +4,7 @@ public abstract class Shopping {
     /**
      * 模板方法
      */
-    public void buyGoods(){
+    protected void buyGoods(){
         login();
         buy();
         pay();
@@ -22,14 +22,14 @@ public abstract class Shopping {
      * 抽象方法
      * 必须由子类实现的方法
      */
-    public abstract void buy();
+    protected abstract void buy();
 
     /**
      * 钩子方法
      * 父类给出默认实现，但子类也可以重写的方法
      *
      */
-    public void pay(){
+    protected void pay(){
         System.out.println("使用支付宝支付成功！");
     }
 
